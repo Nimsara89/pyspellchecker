@@ -3,9 +3,8 @@ from spellchecker import SpellChecker
 # Initialize the spell checker
 spell = SpellChecker()
 
-# Input paragraph with spelling mistakes
-paragraph = """The quick brownn fox jumpd over the lazzy dogg.
-                Shee sells sea shellss by the see shoree."""
+# Input paragraph from the user
+paragraph = input("Please enter a paragraph: ")
 
 # Tokenize the paragraph into words
 words = paragraph.split()
@@ -27,5 +26,5 @@ for word in words:
 corrected_text = ' '.join(corrected_paragraph)
 
 # Output the original and corrected paragraphs
-print("Original Paragraph:\n", paragraph)
+print("\nOriginal Paragraph:\n", paragraph)
 print("\nCorrected Paragraph:\n", corrected_text)
